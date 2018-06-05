@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Bot csat" max_length="40" name="x_58872_needit_bot_csat" type="collection">
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element display="true" label="Target user" max_length="200" name="target_user" type="string"/>
+        <element choice="1" label="User rating" max_length="40" name="u_user_rating" type="integer">
+            <choice>
+                <element label="Strong Dislike" sequence="0" value="1"/>
+                <element label="Dislike" sequence="1" value="2"/>
+                <element label="Neutral" sequence="2" value="3"/>
+                <element label="Like" sequence="3" value="4"/>
+                <element label="Strong Like" sequence="4" value="5"/>
+            </choice>
+        </element>
+    </element>
+</database>
